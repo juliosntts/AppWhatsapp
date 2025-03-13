@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "449418152404",
+    "project_id": "aulawhatsapp-b043e",
+    "storage_bucket": "aulawhatsapp-b043e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449418152404:android:a1b177008976757589ee41",
+        "android_client_info": {
+          "package_name": "com.juliosantos.aulawhatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn8jvnSKaqXplF8hQu0F2Kyj4M8w5Jhc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
