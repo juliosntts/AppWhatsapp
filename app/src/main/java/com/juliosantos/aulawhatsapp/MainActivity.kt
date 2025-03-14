@@ -14,7 +14,10 @@ import com.juliosantos.aulawhatsapp.adapters.ViewPagerAdapter
 import com.juliosantos.aulawhatsapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
 
     private val firebaseAuth by lazy {
         FirebaseAuth.getInstance()
@@ -22,10 +25,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
+
         inicializateToolbar()
         initializeTabbedNavigation()
 
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = ViewPagerAdapter(tabs, supportFragmentManager, lifecycle)
 
         tabLayout.isTabIndicatorFullWidth = true
-        TabLayoutMediator( tabLayout, viewPager) { tab, position ->
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabs[position]
         }.attach()
 

@@ -15,7 +15,7 @@ import com.juliosantos.aulawhatsapp.utils.showMessage
 class RegisterActivity : AppCompatActivity() {
 
     private val binding by lazy {
-        ActivityRegisterBinding.inflate( layoutInflater )
+        ActivityRegisterBinding.inflate(layoutInflater)
     }
 
     private lateinit var name: String

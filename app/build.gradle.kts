@@ -43,12 +43,12 @@ dependencies {
 
     //Dependências Firebase
     implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
-
-    implementation("com.google.firebase:firebase-analytics-ktx")//analytics Firebase
+    implementation("com.google.firebase:firebase-analytics-ktx")//Analytics Firebase
     implementation("com.google.firebase:firebase-auth-ktx")//Auth Firebase
-    implementation("com.google.firebase:firebase-firestore-ktx")//firestore Firebase
-    implementation("com.google.firebase:firebase-storage-ktx")//storage Firebase
+    implementation("com.google.firebase:firebase-firestore-ktx")//Firestore Firebase
+    implementation("com.google.firebase:firebase-storage-ktx")//Storage Firebase
 
+    implementation("com.squareup.picasso:picasso:2.8")//Lib Picasso
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
